@@ -1,0 +1,64 @@
+body {
+    color: black;
+    font-family: "Montserrat";
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.imgCenter{
+    position: fixed;
+    margin-top: 2%;
+    margin-left: 30%;
+    z-index: -1;
+    opacity: 70%;
+}
+
+.center {
+    grid-row: 2 / 3;
+}
+
+div a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border: black solid 3px;
+    padding: 1% 2%;
+    font-weight: bold;
+}
+
+div a:hover {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 1% 5%;
+    font-weight: bold;
+    transition: ease 1s;
+
+}
+
+header {
+    font-size: 50px;
+}
+
+.detail {
+    font-size: 20px;
+}
+
+@media screen and (max-width : 900px) {
+
+    h1{
+        font-size: 50px;
+    }
+
+    body {
+        color: black;
+        font-family: "Montserrat";
+        vertical-align: center;
+        text-align: right;
+        margin-top: 10%;
+        margin-right: 5%;
+    }
+    
+}
