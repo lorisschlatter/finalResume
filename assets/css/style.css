@@ -124,18 +124,16 @@ html{
     }
 
     .pFirst{
-        grid-column: 2 / 6;
+        grid-column: 3 / 6;
         grid-row: 1 / 3;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-top: 0%;
-        margin-left: 10%;
     }
 
     .pFirst h2{
         font-size: 60px;
-        text-align: center;
     }
 
     .photoCv img{
