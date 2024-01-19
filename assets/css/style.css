@@ -39,6 +39,7 @@ html{
 
     .fixedBar{
         position: fixed;
+        z-index: 1000;
         width: 100%;
         background-color: white;
         animation-name: fixedBar;
@@ -197,6 +198,7 @@ html{
     }
 
     .h3First{
+        font-size: 25px;
         grid-column: 2 / 4;
         grid-row: 3 /4;
         text-align: center;
@@ -205,6 +207,7 @@ html{
     }
 
     .h3Second{
+        font-size: 25px;
         grid-column: 5 / 7;
         grid-row: 3 / 4;
         text-align: center;
@@ -299,7 +302,7 @@ html{
         margin-bottom: 5%;
         display: grid;
         column-gap: 40px;
-        grid-template-columns: 1fr 2px 1fr;
+        grid-template-columns: 1fr 1px 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     }
 
@@ -430,13 +433,17 @@ html{
         color: black;
     }
 
+    .coord p{
+        margin-top: 2%;
+    }
+
     .work{
         grid-column: 2 / 3;
         font-size: 20px;
     }
 
     .work img{
-        margin-top: 5%;
+        margin-top: 10%;
         width: 9%;
         margin-left: 40px;
     }
@@ -446,17 +453,28 @@ html{
         margin: 3% 0%;
     }
 
+    .imgWorks{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        margin: 5%;
+        
+    }
+
+    .detailImg{
+        margin-bottom: -3%;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
     .imgWorks img{
-        width: 40%;
+        width: 100%;
         box-shadow: 10px 5px 5px rgb(228, 228, 228) ;
     }
 
-    .imgWorks .cv{
-        width: 48%;
-    }
-
-    .imgWorks .focal{
-        width: 60%;
+    .imgWorks img:hover{
+        transform: scale(1.075);
+        transition: 0.5s ease-in-out;
     }
 
     .back{
@@ -479,6 +497,20 @@ html{
         color: #61ad79;
         transition: ease 1s;
         font-size: 80px;
+    }
+
+    #downloadCV{
+        color: white;
+        background-color: black;
+        width: fit-content;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #downloadCV:hover{
+        background-color: #61ad79;
+        transition: 1s ease;
     }
 
 }
@@ -652,14 +684,18 @@ html{
         margin: 3% 0%;
     }
 
+    .detailImg{
+        font-weight: bold;
+    }
+
     .imgWorks img{
-        width: 48%;
+        width: 85%;
+        margin-bottom: 5%;
     }
 
     .imgWorks .focal{
         margin-bottom: 4%;
     }
-
 
     /* CONTACT */
 
@@ -671,6 +707,13 @@ html{
     .coord a{
         text-decoration: underline;
         color: black;
+    }
+
+    #downloadCV{
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
     }
 
 }
