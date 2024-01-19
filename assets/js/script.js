@@ -12,7 +12,6 @@ window.addEventListener('scroll', function() {
         intro.style.paddingTop = "12%"
     }else{
         header.classList.remove("fixedBar")
-        intro.style.paddingTop = "8%"
     }
 
 });
