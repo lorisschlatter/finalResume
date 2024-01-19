@@ -9,10 +9,10 @@ window.addEventListener('scroll', function() {
 
     if (scrollPosition >= 500){
         header.classList.add("fixedBar")
-        intro.style.paddingTop = "6.5%"
+        intro.style.paddingTop = "12%"
     }else{
         header.classList.remove("fixedBar")
-        intro.style.paddingTop = "3%"
+        intro.style.paddingTop = "8%"
     }
 
 });
