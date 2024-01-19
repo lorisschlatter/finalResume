@@ -7,7 +7,7 @@ window.addEventListener('scroll', function() {
   // Obtenez la position actuelle du scroll
   let scrollPosition = window.scrollY || window.pageYOffset;
 
-    if (scrollPosition >= 500){
+    if (scrollPosition >= 550){
         header.classList.add("fixedBar")
         intro.style.paddingTop = "12%"
     }else{
